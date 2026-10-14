@@ -48,4 +48,12 @@ function toggleFlip(){
 }
 flip.addEventListener("click",toggleFlip);
 flip.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggleFlip()}});
+/* Menu mobile */
+const header=document.querySelector("header"),burger=document.getElementById("burger");
+function setMenu(open){header.classList.toggle("open",open);burger.setAttribute("aria-expanded",open)}
+burger.addEventListener("click",()=>setMenu(!header.classList.contains("open")));
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
+addEventListener("keydown",e=>{if(e.key==="Escape")setMenu(false)});
+matchMedia("(min-width:761px)").addEventListener("change",e=>{if(e.matches)setMenu(false)});
+
 setLang(initialLang());
