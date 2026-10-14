@@ -228,3 +228,18 @@ header.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
   .glass:hover{transform:none;border-color:var(--line)}
   .btn:hover{transform:none}
 }
+
+/* ============ Correctifs iPhone / Safari ============ */
+html{overflow-x:hidden}
+
+/* empêche le contenu (bloc de code) d'élargir les colonnes de la grille */
+@media (max-width:860px){
+  .hero,.about,.c-grid{grid-template-columns:minmax(0,1fr)}
+  .hero>*,.about>*,.c-grid>*{min-width:0}
+}
+
+/* carte retournable : la face cachée l'est vraiment sur Safari */
+.chip-float{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.face.code,.face.back{transition:visibility 0s .4s}
+.flip.flipped .face.code{visibility:hidden}
+.flip:not(.flipped) .face.back{visibility:hidden}
