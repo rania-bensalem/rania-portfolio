@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rania Ben Salem – Full-Stack Developer</title>
+<meta name="description" content="Portfolio de Rania Ben Salem, ingénieure en informatique, développeuse full-stack.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<header>
+  <a class="logo" href="#top">
+    <img src="images/rania.jpeg" class="logo-img" alt="Rania Ben Salem">
+    <span>Rania Ben Salem</span>
+  </a>
+  <nav aria-label="Navigation">
+    <a href="#about" data-i18n="nav_about"></a>
+    <a href="#skills" data-i18n="nav_skills"></a>
+    <a href="#experience" data-i18n="nav_exp"></a>
+    <a href="#internships" data-i18n="nav_st"></a>
+    <a href="#projects" data-i18n="nav_projects"></a>
+    <a href="#contact" data-i18n="nav_contact"></a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language">
+    <button data-lang="fr" aria-pressed="true">FR</button>
+    <button data-lang="en" aria-pressed="false">EN</button>
+    <button data-lang="de" aria-pressed="false">DE</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Présentation avec un bloc de code en arrière-plan -->
+  <section class="hero">
+    <div>
+      <span class="hi" data-i18n="hi"></span>
+      <h1>Rania <span>Ben Salem</span></h1>
+      <div class="typing" id="typing" aria-live="off"></div>
+      <p class="lead" data-i18n="hero_lead"></p>
+      <div class="cta">
+        <a class="btn main" href="#projects" data-i18n="cta_projects"></a>
+        <a class="btn" href="#contact" data-i18n="cta_contact"></a>
+      </div>
+    </div>
+      <div class="flip flipped" id="flip" role="button" tabindex="0" aria-pressed="true" aria-labelledby="flip-hint">
+        <div class="flip-inner">
+
+        <!-- Face avant : code -->
+        <div class="face code">
+          <span class="chip-float f1">Angular</span><span class="chip-float f2">Docker</span><span class="chip-float f3">FastAPI</span>
+          <div class="dots"><b></b><b></b><b></b></div>
+          <pre><span class="k">const</span> rania = {
+        role: <span class="s">"Full-Stack Engineer"</span>,
+        backend: [<span class="s">"Spring Boot"</span>, <span class="s">"FastAPI"</span>, <span class="s">"Node"</span>],
+        frontend: [<span class="s">"Angular"</span>, <span class="s">"React"</span>],
+        devops: [<span class="s">"Jenkins"</span>, <span class="s">"Docker"</span>, <span class="s">"SonarQube"</span>],
+        languages: [<span class="s">"fr"</span>, <span class="s">"en"</span>, <span class="s">"de"</span>],
+        <span class="c">ready</span>: <span class="k">true</span>
+      };</pre>
+        </div>
+
+        <!-- Face arrière : photo -->
+        <div class="face back">
+          <span class="chip-float f1">Spring Boot</span><span class="chip-float f2">DevOps</span><span class="chip-float f3">Angular</span>
+          <img src="images/rania.jpeg" alt="Rania Ben Salem">
+        </div>
+
+      </div>
+      <span class="flip-hint" id="flip-hint" data-i18n="flip_hint"></span>
+    </div>
+  </section>
+
+  <!-- section a propos -->
+  <section id="about" class="rv">
+    <h2 data-i18n-html="about_t"></h2>
+    <div class="about">
+      <div class="glass"><p data-i18n="about_1"></p><p data-i18n="about_2"></p></div>
+      <div class="glass facts">
+        <div><small data-i18n="lbl_title"></small><span data-i18n="title"></span></div>
+        <div><small data-i18n="lbl_loc"></small><span data-i18n="loc"></span></div>
+        <div>
+          <small data-i18n="lbl_lang"></small>
+          <div class="tags langs">
+            <span><b data-i18n="lg_ar"></b> <em data-i18n="lv_native"></em></span>
+            <span><b data-i18n="lg_fr"></b> <em>B2</em></span>
+            <span><b data-i18n="lg_en"></b> <em>B2</em></span>
+            <span><b data-i18n="lg_de"></b> <em>B2</em></span>
+            <span><b data-i18n="lg_es"></b> <em>A2</em></span>
+          </div>
+        </div>      
+      </div>
+    </div>
+        <h3 class="sub" data-i18n-html="edu_t"></h3>
+    <div class="timeline">
+
+      <article class="glass job">
+        <h3 data-i18n="ed1_t"></h3>
+        <div class="job-co" data-i18n="ed1_s"></div>
+        <div class="tags"><span data-i18n="ed1_dt"></span><span data-i18n="ed_loc1"></span></div>
+        <ul>
+          <li data-i18n="ed1_1"></li>
+          <li data-i18n="ed_honors"></li>
+        </ul>
+      </article>
+
+      <article class="glass job">
+        <h3 data-i18n="ed2_t"></h3>
+        <div class="job-co" data-i18n="ed2_s"></div>
+        <div class="tags"><span data-i18n="ed2_dt"></span><span data-i18n="ed_loc2"></span></div>
+        <ul>
+          <li data-i18n="ed2_1"></li>
+          <li data-i18n="ed_honors"></li>
+        </ul>
+      </article>
+
+      <article class="glass job">
+        <h3 data-i18n="ed3_t"></h3>
+        <div class="job-co" data-i18n="ed3_s"></div>
+        <div class="tags"><span data-i18n="ed3_dt"></span><span data-i18n="ed_loc3"></span></div>
+      </article>
+
+    </div>
+  </section>
+
+  
+  <!-- Competences -->
+  <section id="skills" class="rv">
+    <h2 data-i18n-html="skills_t"></h2>
+    <div class="grid">
+      <div class="glass"><h3 data-i18n="sk_lang"></h3><div class="tags"><span>Java</span><span>JavaScript</span><span>Node.js</span><span>React.js</span><span>Spring Boot</span><span>Angular</span></div></div>
+      <div class="glass"><h3 data-i18n="sk_db"></h3><div class="tags"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span></div></div>
+      <div class="glass"><h3 data-i18n="sk_devops"></h3><div class="tags"><span>Jenkins</span><span>Docker</span><span>SonarQube</span><span>Nexus</span><span>Maven</span></div></div>
+      <div class="glass"><h3 data-i18n="sk_monitor"></h3><div class="tags"><span>Prometheus</span><span>Grafana</span></div></div>
+      <div class="glass"><h3 data-i18n="sk_tools"></h3><div class="tags"><span>Git</span><span>GitHub</span><span>Jira</span><span>IntelliJ IDEA</span><span>Visual Studio Code</span></div></div>
+      <div class="glass"><h3 data-i18n="sk_arch"></h3><div class="tags"><span data-i18n="t_micro"></span><span>FreeSWITCH</span><span data-i18n="t_admin"></span></div></div>
+      <div class="glass"><h3 data-i18n="sk_method"></h3><div class="tags"><span>Scrum</span><span data-i18n="t_pm"></span></div></div>
+      <div class="glass"><h3 data-i18n="sk_ai"></h3><div class="tags"><span>Claude Code</span><span>Cursor</span></div></div>
+    </div>
+  </section>
+
+  
+  <!-- experiences -->
+  <section id="experience" class="rv">
+    <h2 data-i18n-html="exp_t"></h2>
+    <div class="timeline">
+
+      <article class="glass job">
+        <div class="job-head">
+          <h3 data-i18n="e1_t"></h3>
+        </div>
+        <div class="job-co">IFBW (Innovation For Better World)</div>
+        <div class="tags"><span data-i18n="e1_d"></span><span data-i18n="e1_loc"></span></div>
+        <ul>
+          <li data-i18n="e1_1"></li>
+          <li data-i18n="e1_2"></li>
+          <li data-i18n="e1_3"></li>
+          <li data-i18n="e1_4"></li>
+        </ul>
+        <div class="tags"><span>Flutter</span><span>SIP</span><span>WebSocket</span><span>REST API</span><span>FreeSWITCH</span></div>
+      </article>
+
+      <article class="glass job">
+        <div class="job-head">
+          <h3 data-i18n="e2_t"></h3>
+        </div>
+        <div class="job-co">IFBW (Innovation For Better World)</div>
+        <div class="tags"><span data-i18n="e2_d"></span><span data-i18n="e2_loc"></span></div>
+        <ul>
+          <li data-i18n="e2_1"></li>
+          <li data-i18n="e2_2"></li>
+          <li data-i18n="e2_3"></li>
+          <li data-i18n="e2_4"></li>
+          <li data-i18n="e2_5"></li>
+        </ul>
+        <div class="tags"><span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span><span>FreeSWITCH</span><span>VPS</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- stages -->
+   <section id="internships" class="rv">
+  <h2 data-i18n-html="st_t"></h2>
+  <div class="timeline">
+
+    <article class="glass job">
+      <h3 data-i18n="st_role"></h3>
+      <div class="job-co">IFBW (Innovation For Better World)</div>
+      <div class="tags"><span data-i18n="s1_dt"></span><span data-i18n="s1_loc"></span></div>
+      <p class="job-desc" data-i18n="s1_d"></p>
+      <div class="stack">
+        <div><b data-i18n="l_back"></b> Spring Boot, FastAPI</div>
+        <div><b data-i18n="l_front"></b> Angular</div>
+        <div><b data-i18n="l_voip"></b> FreeSWITCH</div>
+        <div><b data-i18n="l_auth"></b> JWT (JSON Web Token)</div>
+        <div><b data-i18n="l_db"></b> PostgreSQL</div>
+        <div><b data-i18n="l_tunnel"></b> Ngrok</div>
+        <div><b data-i18n="l_arch"></b> Microservices</div>
+      </div>
+    </article>
+
+    <article class="glass job">
+      <h3 data-i18n="st_role"></h3>
+      <div class="job-co">Ipact Consult Inc</div>
+      <div class="tags"><span data-i18n="s2_dt"></span><span data-i18n="s2_loc"></span></div>
+      <p class="job-desc" data-i18n="s2_d"></p>
+      <div class="stack">
+        <div><b data-i18n="l_back"></b> Spring Boot</div>
+        <div><b data-i18n="l_front"></b> Angular</div>
+        <div><b data-i18n="l_db"></b> MongoDB</div>
+      </div>
+    </article>
+
+    <article class="glass job">
+      <h3 data-i18n="st_role"></h3>
+      <div class="job-co">StartNow</div>
+      <div class="tags"><span data-i18n="s3_dt"></span><span data-i18n="s3_loc"></span></div>
+      <p class="job-desc" data-i18n="s3_d"></p>
+      <div class="stack">
+        <div><b data-i18n="l_back"></b> Node.js</div>
+        <div><b data-i18n="l_front"></b> React.js</div>
+        <div><b data-i18n="l_db"></b> MongoDB</div>
+      </div>
+    </article>
+
+    <article class="glass job">
+      <h3 data-i18n="st_role"></h3>
+      <div class="job-co">eNano-Tech</div>
+      <div class="tags"><span data-i18n="s4_dt"></span><span data-i18n="s4_loc"></span></div>
+      <p class="job-desc" data-i18n="s4_d"></p>
+      <div class="stack">
+        <div><b data-i18n="l_back"></b> JSON-Server</div>
+        <div><b data-i18n="l_front"></b> ReactJS</div>
+      </div>
+    </article>
+
+  </div>
+  </section>
+
+ <!-- Projets -->
+<section id="projects" class="rv">
+  <h2 data-i18n-html="proj_t"></h2>
+  <div class="grid wide">
+
+    <article class="glass proj">
+      <div class="ico">📞</div>
+      <h3 data-i18n="p1_t"></h3>
+      <div class="tags"><span data-i18n="p1_dt"></span></div>
+      <p data-i18n="p1_d"></p>
+      <div class="stack">
+        <div><b data-i18n="l_back"></b> Spring Boot, FastAPI</div>
+        <div><b data-i18n="l_front"></b> Angular</div>
+        <div><b data-i18n="l_voip"></b> FreeSWITCH</div>
+        <div><b data-i18n="l_auth"></b> JWT (JSON Web Token)</div>
+        <div><b data-i18n="l_db"></b> PostgreSQL</div>
+        <div><b data-i18n="l_tunnel"></b> Ngrok</div>
+        <div><b data-i18n="l_arch"></b> Microservices</div>
+      </div>
+    </article>
+
+    <article class="glass proj">
+      <div class="ico">🐳</div>
+      <h3 data-i18n="p2_t"></h3>
+      <div class="tags"><span data-i18n="p2_dt"></span></div>
+      <p data-i18n="p2_d"></p>
+      <ul>
+        <li><b>Git</b> – <span data-i18n="p2_1"></span></li>
+        <li><b>Docker Compose</b> – <span data-i18n="p2_2"></span></li>
+        <li><b>Nexus</b> – <span data-i18n="p2_3"></span></li>
+        <li><b>SonarQube</b> – <span data-i18n="p2_4"></span></li>
+        <li><b>Jenkins</b> – <span data-i18n="p2_5"></span></li>
+        <li><b>Maven</b> – <span data-i18n="p2_6"></span></li>
+        <li><b>Prometheus &amp; Grafana</b> – <span data-i18n="p2_7"></span></li>
+      </ul>
+    </article>
+
+    <article class="glass proj">
+      <div class="ico">🃏</div>
+      <h3 data-i18n="p3_t"></h3>
+      <div class="tags"><span data-i18n="p3_dt"></span></div>
+      <p data-i18n="p3_d"></p>
+      <div class="award" data-i18n="p3_award"></div>
+      <div class="stack">
+        <div><b data-i18n="l_back"></b> Spring Boot, FastAPI</div>
+        <div><b data-i18n="l_front"></b> Angular</div>
+        <div><b data-i18n="l_auth"></b> Keycloak</div>
+        <div><b data-i18n="l_db"></b> PostgreSQL</div>
+        <div><b data-i18n="l_cloud"></b> Microsoft Azure</div>
+        <div><b data-i18n="l_orch"></b> Kubernetes</div>
+        <div><b data-i18n="l_arch"></b> Microservices</div>
+      </div>
+    </article>
+
+    <article class="glass proj">
+      <div class="ico">🎨</div>
+      <h3 data-i18n="p4_t"></h3>
+      <div class="tags"><span data-i18n="p4_dt"></span></div>
+      <p data-i18n="p4_d"></p>
+      <p data-i18n="p4_m"></p>
+      <div class="stack">
+        <div><b data-i18n="l_desk"></b> Java</div>
+        <div><b data-i18n="l_web"></b> Symfony</div>
+        <div><b data-i18n="l_mob"></b> Codename One</div>
+        <div><b data-i18n="l_db"></b> MySQL</div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+    <!-- Contact -->
+  <section id="contact" class="rv">
+    <h2 class="center" data-i18n-html="contact_t"></h2>
+    <p class="c-lead" data-i18n="contact_lead"></p>
+
+    <div class="c-grid">
+      <div class="c-info">
+        <a class="glass c-card" href="mailto:raniabensalem53@gmail.com">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><small data-i18n="c_email"></small><b>raniabensalem53@gmail.com</b></span>
+        </a>
+
+        <a class="glass c-card" href="tel:+21658159256">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span><small data-i18n="c_phone"></small><b>(+216) 58 159 256</b></span>
+        </a>
+
+        <a class="glass c-card" href="https://www.linkedin.com/in/rania-bensalem-b382b9202" target="_blank" rel="noopener">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+          <span><small data-i18n="c_linkedin"></small><b>linkedin.com/in/rania-bensalem-b382b9202</b></span>
+        </a>
+
+        <a class="glass c-card" href="https://github.com/RaniaBs21" target="_blank" rel="noopener">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
+          <span><small>GitHub</small><b>github.com/RaniaBs21</b></span>
+        </a>
+
+        <div class="glass c-card">
+          <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span><small data-i18n="lbl_loc"></small><b data-i18n="loc"></b></span>
+        </div>
+      </div>
+
+      <form id="f" class="glass c-form">
+        <label><span data-i18n="f_name"></span><input name="name" required autocomplete="name" data-i18n-ph="ph_name"></label>
+        <label><span data-i18n="f_email"></span><input name="email" type="email" required autocomplete="email" data-i18n-ph="ph_email"></label>
+        <label><span data-i18n="f_subject"></span><input name="subject" required data-i18n-ph="ph_subject"></label>
+        <label><span data-i18n="f_msg"></span><textarea name="msg" required data-i18n-ph="ph_msg"></textarea></label>
+        <button class="btn main" type="submit">
+          <span data-i18n="f_send"></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>© <span id="y"></span> Rania Ben Salem</footer>
+</main>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
